@@ -37,6 +37,7 @@
     --padding-footer: 16px;
     --fontsize: 14px;
     --max-height: 100%;
+    --teaser-width: 90%;
   }
   #gamerplus {
     min-height: 100%;
@@ -48,6 +49,7 @@
     --padding-footer: 32px;
     --fontsize: 18px;
     --max-height: 800px;
+    --teaser-width: 80%;
   }
   #gamerplus {
     max-height: var(--max-height);
@@ -171,14 +173,11 @@ button {
   line-height: 25px;
   font-size: 15px;
   color: var(--titlebar-color);
-  width: 80%;
+  width: var(--teaser-width);
   margin: 0 auto;
   text-align: center;
-  padding-left: 1rem;
   background: #191919;
-  padding-top: 1rem;
-  padding-bottom: 10px;
-  padding-right: 1rem;
+  padding: 1rem 1rem 10px 1rem;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 8px 10px 0px rgba(0, 0, 0, 0.0117647059);
 }
