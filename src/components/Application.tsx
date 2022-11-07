@@ -50,7 +50,7 @@ const Application: React.FC = () => {
 
   return (
     <>
-      <div id='erwt'>
+      <div id='gamerplus'>
         <div className='toggle-button-cover'>
           <div className='button-cover'>
             <div className='button r' id='button-3'>

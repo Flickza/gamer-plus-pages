@@ -1,12 +1,3 @@
-/**
- * Licensed under the MIT License. See LICENSE file in the project root for license information.
- * Copyright (c) 2022 Codesbiome, guasam
- *
- * @author  : guasam
- * @project : ERWT Boilerplate
- * @package : Application Sass Stylesheet
-*/
-
 @import './Theme.scss';
 
 /**
@@ -135,7 +126,7 @@ button {
   h1 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: var(--erwt-heading-color);
+    color: var(--gamerplus-heading-color);
     line-height: 1;
     text-transform: uppercase;
   }
@@ -221,13 +212,13 @@ button {
   }
 }
 
-#erwt {
-  // user-select: none;
+#gamerplus {
+  user-select: none;
   display: flex;
   flex-direction: column;
   max-height: 800px;
   justify-content: space-between;
-  background: var(--erwt-bgcolor);
+  background: var(--gamerplus-bgcolor);
   margin: 0 auto;
   border-radius: 10px;
   border: 1px #ff6d43 solid;
