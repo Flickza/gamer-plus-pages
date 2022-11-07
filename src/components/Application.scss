@@ -28,6 +28,33 @@
     background: var(--scroll-thumb-hover-bgcolor);
   }
 }
+@media only screen and (min-width: 768) {
+  /* For tablets: */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  #gamerplus {
+    max-width: 90%;
+    .main-heading h1 {
+      text-align: center;
+    }
+    .footer {
+      padding: 16px;
+    }
+  }
+  :root {
+    --padding-footer: 16px;
+    --justify-content: flex-start;
+    --fontsize: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --padding-footer: 32px;
+    --justify-content: center;
+    --fontsize: 18px;
+  }
+}
 
 html,
 body,
@@ -44,21 +71,21 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  margin: 0;
-}
-
 #app {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   user-select: none;
   align-items: center;
-  justify-content: center;
+  justify-content: var(--justify-content);
 
   &.has-border {
     border: var(--app-border-color);
   }
+}
+
+h1 {
+  margin: 0;
 }
 
 button {
@@ -231,7 +258,7 @@ button {
   }
   .footer {
     margin-top: 1rem;
-    padding: 2rem;
+    padding: var(--padding-footer);
     background: var(--app-footer-bgColor);
   }
 }
@@ -336,4 +363,7 @@ button {
 
 .chromeButton {
   border: 1px var(--app-border-color) solid;
+  &:hover {
+    border: 1px var(--app-hover-color) solid;
+  }
 }

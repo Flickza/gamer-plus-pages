@@ -1,0 +1,75 @@
+.twitterfeedback {
+  color: #389eff;
+}
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+.thin {
+  font-weight: 300;
+}
+.thick {
+  color: #5caaef;
+  font-weight: 900;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: var(--fontsize);
+  color: var(--titlebar-color);
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+p {
+  color: var(--titlebar-color);
+}
+.link-2 {
+  width: auto;
+}
+.link-2 p {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin: 1px;
+}
+
+[class^='link-'] {
+  display: inline-block;
+  margin: 1%;
+}
+
+/* linktwo */
+.link-2 a:hover {
+  color: #5caaef;
+}
+
+.link-2 a:before {
+  content: '';
+  border-bottom: solid 1px #5caaef;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 0;
+}
+
+.link-2 a:hover:before {
+  opacity: 1;
+}
+
+.link-2 a,
+.link-2 a:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+img {
+  display: inline;
+}

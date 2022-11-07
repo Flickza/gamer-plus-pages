@@ -12,9 +12,9 @@ footer .main {
   position: fixed;
   background-color: var(--gamerplus-bgcolor);
   width: 100%;
-  height: 100px;
-  & .content .text > p {
+  & .text > p {
     margin: 0;
+    margin-top: 1%;
     padding: 0;
     text-align: center;
     color: var(--titlebar-color);

@@ -4,12 +4,12 @@ import typescript from '@assets/icons/typescript.png'
 import nodejs from '@assets/icons/nodejs.png'
 import webpack from '@assets/icons/webpack.png'
 import license from '@assets/icons/license.png'
-import dark from '@assets/icons/dark-mode.png'
-import light from '@assets/icons/light-mode.png'
+import twitterLight from '@assets/icons/twitter-circle-light.png'
+import twitterDark from '@assets/icons/twitter-circle-dark.png'
 
 export const icons = {
-  dark,
-  light,
+  twitterLight,
+  twitterDark,
   chrome,
   react,
   typescript,

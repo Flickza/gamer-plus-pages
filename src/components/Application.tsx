@@ -39,6 +39,7 @@ const Application: React.FC = () => {
   function toggleTheme() {
     setDarkTheme(!darkTheme)
   }
+
   const goChromeStore = () => {
     // open new tab for user with url https://chrome.google.com/webstore/detail/gamer%20/cimcgcfafkpkoafjkilmkohelanagphj?hl=en&authuser=0
     window.open(
@@ -92,7 +93,7 @@ const Application: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer darkTheme={darkTheme} />
     </>
   )
 }
