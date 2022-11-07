@@ -6,10 +6,9 @@ footer {
 }
 footer .main {
   border-top: 1.5px solid var(--app-border-color);
-  z-index: 5;
+  position: relative;
   bottom: 0;
   left: 0;
-  position: fixed;
   background-color: var(--gamerplus-bgcolor);
   width: 100%;
   & .text > p {

@@ -91,9 +91,9 @@ const Application: React.FC = () => {
               </p>
             </button>
           </div>
+          <Footer darkTheme={darkTheme} />
         </div>
       </div>
-      <Footer darkTheme={darkTheme} />
     </>
   )
 }
