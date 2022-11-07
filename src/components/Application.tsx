@@ -4,7 +4,6 @@ import Footer from './Footer'
 import { icons } from './Icons'
 
 const Application: React.FC = () => {
-  const [counter, setCounter] = useState(0)
   const [darkTheme, setDarkTheme] = useState(true)
 
   /**
@@ -84,7 +83,7 @@ const Application: React.FC = () => {
 
         <div className='footer'>
           <div className='center chromestore'>
-            <button className='item' onClick={goChromeStore}>
+            <button className='chromeButton' onClick={goChromeStore}>
               <img className='item-icon' src={icons.chrome} />
               <p style={{ marginLeft: '5px', fontSize: '16px' }}>
                 Install extension for Chrome

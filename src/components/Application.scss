@@ -333,3 +333,7 @@ button {
 #button-3 .checkbox:checked ~ .layer {
   background-color: #e1e1e1;
 }
+
+.chromeButton {
+  border: 1px var(--app-border-color) solid;
+}
