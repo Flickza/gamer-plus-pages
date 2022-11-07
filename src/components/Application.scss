@@ -144,10 +144,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 0;
 
   img {
-    margin-right: 1rem;
+    margin: 0 1rem 0 0;
   }
 
   h1 {
@@ -175,7 +175,6 @@ button {
   color: var(--titlebar-color);
   width: 80%;
   margin: 0 auto;
-  // margin-bottom: 3rem;
   text-align: center;
   padding-left: 1rem;
   background: #191919;
@@ -229,7 +228,7 @@ button {
   &-icon {
     width: 16px;
     height: 16px;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     opacity: 0.8;
   }
 
@@ -259,14 +258,14 @@ button {
     }
   }
   .footer {
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
     padding: var(--padding-footer);
     background: var(--app-footer-bgColor);
   }
 }
 
 .chromestore {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
 }
 
 .button-cover,
