@@ -154,10 +154,10 @@ button {
   display: flex;
   line-height: 25px;
   font-size: 15px;
-  color: gray;
-  width: 70%;
+  color: var(--titlebar-color);
+  width: 80%;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   text-align: center;
   padding-left: 1rem;
   background: #191919;
@@ -230,11 +230,12 @@ button {
   background: var(--erwt-bgcolor);
   margin: 0 auto;
   border-radius: 10px;
+  border: 1px #ff6d43 solid;
   box-shadow: 0 0 20px 4px #00000000;
 
   .header {
     padding: 3rem 2rem 0rem 2rem;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
   }
   .footer {
@@ -242,4 +243,101 @@ button {
     padding: 2rem;
     background: var(--app-footer-bgColor);
   }
+}
+
+.chromestore {
+  margin-bottom: 2rem;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 36px;
+  overflow: hidden;
+}
+.toggle-button-cover {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #434343;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-3 .knobs:before {
+  content: 'Dark';
+  position: relative;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #2b2b2b;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before {
+  content: 'Light';
+  left: 42px;
+  background-color: #bababa;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #e1e1e1;
 }
