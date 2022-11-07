@@ -24,6 +24,7 @@ a {
   text-decoration: none;
   position: relative;
   display: block;
+  white-space: nowrap;
 }
 p {
   color: var(--titlebar-color);
@@ -41,7 +42,7 @@ p {
 
 [class^='link-'] {
   display: inline-block;
-  margin: 1%;
+  margin: 2%;
 }
 
 /* linktwo */

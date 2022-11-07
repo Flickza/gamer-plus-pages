@@ -26,7 +26,7 @@ const SupportFeedback = ({
           <img
             className='twitter-icon'
             src={darkTheme ? icons.twitterLight : icons.twitterDark}
-            width={14}
+            width={13}
             alt='twitter'
           />
         </span>
